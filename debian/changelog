@@ -1,6 +1,7 @@
-luajit (2.1-20220411~exp-1) experimental; urgency=medium
+luajit2 (2.1-20220411-1~exp1) experimental; urgency=medium
 
   * New upstream version 2.1-20220411. (Closes: #1011320)
-  * Borrowed some bits from Debian's src:luajit packaging.
+  * Borrowed bits from Debian's src:luajit packaging.
+  * This package provides the same contents as src:luajit.
 
  -- Mo Zhou <lumin@debian.org>  Thu, 19 May 2022 22:15:48 -0400
