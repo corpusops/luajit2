@@ -1,0 +1,29 @@
+#!/usr/bin/make -f
+ABIM:=$(shell grep MAJVER Makefile|cut -d = -f 2|tr -d ' ')
+ABIN:=$(shell grep MINVER Makefile|cut -d = -f 2|tr -d ' ')
+ABIO:=$(shell grep RELVER Makefile|cut -d = -f 2|tr -d ' ')
+ABI=$(ABIM).$(ABIN).$(ABIO)
+
+export DPKG_GENSYMBOLS_CHECK_LEVEL=4
+include /usr/share/dpkg/default.mk
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	$(MAKE) amalg PREFIX=/usr \
+		MULTILIB=lib/$(DEB_HOST_MULTIARCH) \
+		CROSS=$(DEB_HOST_GNU_TYPE)- \
+		Q= E=@:
+
+override_dh_auto_install:
+	make install PREFIX=/usr DESTDIR=$(CURDIR)/debian/tmp/ \
+		MULTILIB=lib/$(DEB_HOST_MULTIARCH) LDCONFIG="/sbin/ldconfig -n"
+	sed -i 's?^multilib=.*?multilib=lib/$(DEB_HOST_MULTIARCH)?' \
+		debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/pkgconfig/*.pc
+	# debian doesn't allow multiple luajit versions, just rename the binary to luajit
+	mv $(CURDIR)/debian/tmp/usr/bin/luajit-* $(CURDIR)/debian/tmp/usr/bin/luajit
+
+execute_after_dh_auto_test:
+	# fail early on architectures it does not support
+	./src/luajit -e 'print(true)'
