@@ -1,7 +1,9 @@
 libluajit-5.1.so.2 libluajit2-5.1-2 #MINVER#
- luaJIT_profile_dumpstack@Base 2.1.0~beta1+dfsg
- luaJIT_profile_start@Base 2.1.0~beta1+dfsg
- luaJIT_profile_stop@Base 2.1.0~beta1+dfsg
+ hash_dense@Base 2.1-20220411
+ hash_sparse@Base 2.1-20220411
+ luaJIT_profile_dumpstack@Base 2.1-20220411
+ luaJIT_profile_start@Base 2.1-20220411
+ luaJIT_profile_stop@Base 2.1-20220411
  luaJIT_setmode@Base 2.0.4+dfsg
  luaL_addlstring@Base 2.0.4+dfsg
  luaL_addstring@Base 2.0.4+dfsg
@@ -36,13 +38,13 @@ libluajit-5.1.so.2 libluajit2-5.1-2 #MINVER#
  luaL_optlstring@Base 2.0.4+dfsg
  luaL_optnumber@Base 2.0.4+dfsg
  luaL_prepbuffer@Base 2.0.4+dfsg
- luaL_pushmodule@Base 2.1.0~beta3+dfsg
+ luaL_pushmodule@Base 2.1-20220411
  luaL_pushresult@Base 2.0.4+dfsg
  luaL_ref@Base 2.0.4+dfsg
  luaL_register@Base 2.0.4+dfsg
- luaL_setfuncs@Base 2.1.0~beta3+dfsg
- luaL_setmetatable@Base 2.1.0~beta3+dfsg
- luaL_testudata@Base 2.1.0~beta3+dfsg
+ luaL_setfuncs@Base 2.1-20220411
+ luaL_setmetatable@Base 2.1-20220411
+ luaL_testudata@Base 2.1-20220411
  luaL_traceback@Base 2.0.4+dfsg
  luaL_typerror@Base 2.0.4+dfsg
  luaL_unref@Base 2.0.4+dfsg
@@ -52,7 +54,7 @@ libluajit-5.1.so.2 libluajit2-5.1-2 #MINVER#
  lua_checkstack@Base 2.0.4+dfsg
  lua_close@Base 2.0.4+dfsg
  lua_concat@Base 2.0.4+dfsg
- lua_copy@Base 2.1.0~beta3+dfsg
+ lua_copy@Base 2.1-20220411
  lua_cpcall@Base 2.0.4+dfsg
  lua_createtable@Base 2.0.4+dfsg
  lua_dump@Base 2.0.4+dfsg
@@ -60,6 +62,8 @@ libluajit-5.1.so.2 libluajit2-5.1-2 #MINVER#
  lua_error@Base 2.0.4+dfsg
  lua_gc@Base 2.0.4+dfsg
  lua_getallocf@Base 2.0.4+dfsg
+ lua_getexdata2@Base 2.1-20220411
+ lua_getexdata@Base 2.1-20220411
  lua_getfenv@Base 2.0.4+dfsg
  lua_getfield@Base 2.0.4+dfsg
  lua_gethook@Base 2.0.4+dfsg
@@ -77,7 +81,7 @@ libluajit-5.1.so.2 libluajit2-5.1-2 #MINVER#
  lua_isnumber@Base 2.0.4+dfsg
  lua_isstring@Base 2.0.4+dfsg
  lua_isuserdata@Base 2.0.4+dfsg
- lua_isyieldable@Base 2.1.0~beta3+dfsg
+ lua_isyieldable@Base 2.1-20220411
  lua_lessthan@Base 2.0.4+dfsg
  lua_load@Base 2.0.4+dfsg
  lua_loadx@Base 2.0.4+dfsg
@@ -106,8 +110,11 @@ libluajit-5.1.so.2 libluajit2-5.1-2 #MINVER#
  lua_rawseti@Base 2.0.4+dfsg
  lua_remove@Base 2.0.4+dfsg
  lua_replace@Base 2.0.4+dfsg
+ lua_resetthread@Base 2.1-20220411
  lua_resume@Base 2.0.4+dfsg
  lua_setallocf@Base 2.0.4+dfsg
+ lua_setexdata2@Base 2.1-20220411
+ lua_setexdata@Base 2.1-20220411
  lua_setfenv@Base 2.0.4+dfsg
  lua_setfield@Base 2.0.4+dfsg
  lua_sethook@Base 2.0.4+dfsg
@@ -120,10 +127,10 @@ libluajit-5.1.so.2 libluajit2-5.1-2 #MINVER#
  lua_toboolean@Base 2.0.4+dfsg
  lua_tocfunction@Base 2.0.4+dfsg
  lua_tointeger@Base 2.0.4+dfsg
- lua_tointegerx@Base 2.1.0~beta3+dfsg
+ lua_tointegerx@Base 2.1-20220411
  lua_tolstring@Base 2.0.4+dfsg
  lua_tonumber@Base 2.0.4+dfsg
- lua_tonumberx@Base 2.1.0~beta3+dfsg
+ lua_tonumberx@Base 2.1-20220411
  lua_topointer@Base 2.0.4+dfsg
  lua_tothread@Base 2.0.4+dfsg
  lua_touserdata@Base 2.0.4+dfsg
@@ -131,7 +138,7 @@ libluajit-5.1.so.2 libluajit2-5.1-2 #MINVER#
  lua_typename@Base 2.0.4+dfsg
  lua_upvalueid@Base 2.0.4+dfsg
  lua_upvaluejoin@Base 2.0.4+dfsg
- lua_version@Base 2.1.0~beta3+dfsg
+ lua_version@Base 2.1-20220411
  lua_xmove@Base 2.0.4+dfsg
  lua_yield@Base 2.0.4+dfsg
  luaopen_base@Base 2.0.4+dfsg
@@ -144,5 +151,8 @@ libluajit-5.1.so.2 libluajit2-5.1-2 #MINVER#
  luaopen_os@Base 2.0.4+dfsg
  luaopen_package@Base 2.0.4+dfsg
  luaopen_string@Base 2.0.4+dfsg
- luaopen_string_buffer@Base 2.1.0~beta3+git20220320+dfsg
+ luaopen_string_buffer@Base 2.1-20220411
  luaopen_table@Base 2.0.4+dfsg
+ recff_thread_exdata2@Base 2.1-20220411
+ recff_thread_exdata@Base 2.1-20220411
+ str_hash_init_sse42@Base 2.1-20220411
