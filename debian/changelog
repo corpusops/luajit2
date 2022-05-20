@@ -4,4 +4,4 @@ luajit2 (2.1-20220411-1~exp1) experimental; urgency=medium
   * Borrowed bits from Debian's src:luajit packaging.
   * This package provides the same contents as src:luajit.
 
- -- Mo Zhou <lumin@debian.org>  Thu, 19 May 2022 22:15:48 -0400
+ -- Mo Zhou <lumin@debian.org>  Fri, 20 May 2022 10:24:40 -0400
