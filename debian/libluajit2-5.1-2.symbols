@@ -1,6 +1,7 @@
 libluajit-5.1.so.2 libluajit2-5.1-2 #MINVER#
- hash_dense@Base 2.1-20220411
- hash_sparse@Base 2.1-20220411
+* Build-Depends-Package: libluajit2-5.1-dev
+ (arch=amd64)hash_dense@Base 2.1-20220411
+ (arch=amd64)hash_sparse@Base 2.1-20220411
  luaJIT_profile_dumpstack@Base 2.1-20220411
  luaJIT_profile_start@Base 2.1-20220411
  luaJIT_profile_stop@Base 2.1-20220411
@@ -153,6 +154,6 @@ libluajit-5.1.so.2 libluajit2-5.1-2 #MINVER#
  luaopen_string@Base 2.0.4+dfsg
  luaopen_string_buffer@Base 2.1-20220411
  luaopen_table@Base 2.0.4+dfsg
- recff_thread_exdata2@Base 2.1-20220411
- recff_thread_exdata@Base 2.1-20220411
- str_hash_init_sse42@Base 2.1-20220411
+ (arch=amd64 i386)recff_thread_exdata2@Base 2.1-20220411
+ (arch=amd64 i386)recff_thread_exdata@Base 2.1-20220411
+ (arch=amd64)str_hash_init_sse42@Base 2.1-20220411
