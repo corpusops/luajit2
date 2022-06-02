@@ -1,3 +1,10 @@
+luajit2 (2.1-20220411-1~exp2) experimental; urgency=medium
+
+  [ Frédéric Bonnard ]
+  * Improve symbols file
+
+ -- Mo Zhou <lumin@debian.org>  Wed, 01 Jun 2022 20:40:09 -0700
+
 luajit2 (2.1-20220411-1~exp1) experimental; urgency=medium
 
   * New upstream version 2.1-20220411. (Closes: #1011320)
