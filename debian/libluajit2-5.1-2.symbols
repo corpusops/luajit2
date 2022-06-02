@@ -154,6 +154,6 @@ libluajit-5.1.so.2 libluajit2-5.1-2 #MINVER#
  luaopen_string@Base 2.0.4+dfsg
  luaopen_string_buffer@Base 2.1-20220411
  luaopen_table@Base 2.0.4+dfsg
- (arch=amd64 i386)recff_thread_exdata2@Base 2.1-20220411
- (arch=amd64 i386)recff_thread_exdata@Base 2.1-20220411
+ (arch=amd64 i386 arm64 armel armhf mips64el mipsel hurd-i386 powerpc)recff_thread_exdata2@Base 2.1-20220411
+ (arch=amd64 i386 arm64 armel armhf mips64el mipsel hurd-i386 powerpc)recff_thread_exdata@Base 2.1-20220411
  (arch=amd64)str_hash_init_sse42@Base 2.1-20220411
