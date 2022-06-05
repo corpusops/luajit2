@@ -1,4 +1,4 @@
-libluajit-5.1.so.2 libluajit2-5.1-2 #MINVER#
+libluajit-5.1.so.2 libluajit2-5.1-2 | libluajit-5.1-2 #MINVER#
 * Build-Depends-Package: libluajit2-5.1-dev
  (arch=amd64)hash_dense@Base 2.1-20220411
  (arch=amd64)hash_sparse@Base 2.1-20220411
