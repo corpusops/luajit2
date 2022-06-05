@@ -1,3 +1,9 @@
+luajit2 (2.1-20220411-3) unstable; urgency=medium
+
+  * Fixup missing autopkgtest dependency.
+
+ -- Mo Zhou <lumin@debian.org>  Sat, 04 Jun 2022 22:19:48 -0700
+
 luajit2 (2.1-20220411-2) unstable; urgency=medium
 
   * Allow using libluajit-5.1-2 as dependency fallback.
