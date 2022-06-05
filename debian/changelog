@@ -1,3 +1,11 @@
+luajit2 (2.1-20220411-2) unstable; urgency=medium
+
+  * Allow using libluajit-5.1-2 as dependency fallback.
+    This is a dependency-template feature, see deb-symbols(5) for details.
+  * Override lintian warnings about the binary package name.
+
+ -- Mo Zhou <lumin@debian.org>  Sat, 04 Jun 2022 22:12:04 -0700
+
 luajit2 (2.1-20220411-1) unstable; urgency=medium
 
   * Refresh symbols again for the rest architectures.
