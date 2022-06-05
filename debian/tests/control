@@ -2,4 +2,4 @@ Test-Command: luajit -v
 Features: test-name=luajit-version
 
 Test-Command: luajit -lmoses -e "print(true)"
-Depends: lua-moses
+Depends: @, lua-moses
