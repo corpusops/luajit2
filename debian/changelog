@@ -1,3 +1,13 @@
+luajit2 (2.1-20220411-4) unstable; urgency=medium
+
+  * Update dependency template as libluajit2-5.1-2 | libluajit-5.1-2.
+    This is an advanced feature, see deb-symbols(5). Packages built against
+    src:luajit2 instead of src:luajit indicates a clear mainatiner preference.
+    And hence the dependency template has reversed order compared to that
+    of src:luajit, i.e., libluajit-5.1-2 | libluajit2-5.1-2.
+
+ -- Mo Zhou <lumin@debian.org>  Mon, 06 Jun 2022 19:56:18 -0700
+
 luajit2 (2.1-20220411-3) unstable; urgency=medium
 
   * Fixup missing autopkgtest dependency.
