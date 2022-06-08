@@ -17,8 +17,8 @@ Depends: libluajit2-5.1-2 (= ${binary:Version}),
          libluajit2-5.1-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
-Conflicts: luajit
-Replaces: luajit
+Conflicts: luajit [!ppc64el !s390x]
+Replaces: luajit [!ppc64el !s390x]
 Description: OpenResty-maintained branch of LuaJIT (interpreter)
  LuaJIT implements the full set of language features defined by Lua 5.1. The
  virtual machine (VM) is API- and ABI-compatible to the standard Lua interpreter
@@ -45,8 +45,8 @@ Pre-Depends: ${misc:Pre-Depends}
 Depends: libluajit2-5.1-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
-Conflicts: libluajit-5.1-2
-Replaces: libluajit-5.1-2
+Conflicts: libluajit-5.1-2 [!ppc64el !s390x]
+Replaces: libluajit-5.1-2 [!ppc64el !s390x]
 Provides: libluajit-5.1.so.2
 Description: OpenResty-maintained branch of LuaJIT (shared objects)
  LuaJIT implements the full set of language features defined by Lua 5.1. The
@@ -64,8 +64,8 @@ Architecture: any
 Depends: libluajit2-5.1-2 (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
-Conflicts: libluajit-5.1-dev
-Replaces: libluajit-5.1-dev
+Conflicts: libluajit-5.1-dev [!ppc64el !s390x]
+Replaces: libluajit-5.1-dev [!ppc64el !s390x]
 Provides: libluajit-5.1.so
 Description: OpenResty-maintained branch of LuaJIT (development files)
  This package contains header files and a statically linkable library for
