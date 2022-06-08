@@ -1,3 +1,11 @@
+luajit2 (2.1-20220411-5) unstable; urgency=medium
+
+  * No Conflicts+Replaces against src:luajit on IBM Architectures.
+    It yields transitional dummy packages on these archs, which depends
+    on the real binary packages provided by src:luajit2.
+
+ -- Mo Zhou <lumin@debian.org>  Wed, 08 Jun 2022 06:57:03 -0700
+
 luajit2 (2.1-20220411-4) unstable; urgency=medium
 
   * Update dependency template as libluajit2-5.1-2 | libluajit-5.1-2.
