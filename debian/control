@@ -10,7 +10,7 @@ Uploaders: Mo Zhou <lumin@debian.org>
 Build-Depends: debhelper-compat (= 13)
 
 Package: luajit2
-Architecture: any
+Architecture: amd64 arm64 armel armhf i386 mips64el mipsel s390x
 Multi-Arch: foreign
 Pre-Depends: ${misc:Pre-Depends}
 Depends: libluajit2-5.1-2 (= ${binary:Version}),
@@ -39,7 +39,7 @@ Description: OpenResty-maintained branch of LuaJIT (common files)
  by its embeddable (i.e. library) version.
 
 Package: libluajit2-5.1-2
-Architecture: any
+Architecture: amd64 arm64 armel armhf i386 mips64el mipsel s390x
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: libluajit2-5.1-common (= ${source:Version}),
@@ -60,7 +60,7 @@ Package: libluajit2-5.1-dev
 Section: libdevel
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
-Architecture: any 
+Architecture: amd64 arm64 armel armhf i386 mips64el mipsel s390x
 Depends: libluajit2-5.1-2 (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
