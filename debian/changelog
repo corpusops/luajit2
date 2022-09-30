@@ -1,4 +1,28 @@
-luajit2 (2.1-20220411-5) unstable; urgency=medium
+luajit2 (2.1-20220411-4ppa-nginx-25) jammy; urgency=medium
+
+  * packaging for jammy
+
+ -- kiorky <kiorky@cryptelium.net>  Fri, 30 Sep 2022 20:35:42 +0200
+
+luajit2 (2.1-20220411-4ppa-nginx-24) jammy; urgency=medium
+
+  * packaging for focal
+
+ -- kiorky <kiorky@cryptelium.net>  Fri, 30 Sep 2022 20:35:39 +0200
+
+luajit2 (2.1-20220411-4ppa-nginx-23) focal; urgency=medium
+
+  * packaging for bionic
+
+ -- kiorky <kiorky@cryptelium.net>  Fri, 30 Sep 2022 20:35:37 +0200
+
+luajit2 (2.1-20220411-4ppa-nginx-22) bionic; urgency=medium
+
+  * packaging for xenial
+
+ -- kiorky <kiorky@cryptelium.net>  Fri, 30 Sep 2022 20:35:35 +0200
+
+luajit2 (2.1-20220411-4) xenial; urgency=medium
 
   * No Conflicts+Replaces against src:luajit on IBM Architectures.
     It yields transitional dummy packages on these archs, which depends
