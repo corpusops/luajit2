@@ -7,7 +7,7 @@ Vcs-Git: https://salsa.debian.org/lua-team/luajit2.git
 Vcs-Browser: https://salsa.debian.org/lua-team/luajit2.git
 Maintainer: Debian Lua Team <pkg-lua-devel@lists.alioth.debian.org>
 Uploaders: Mo Zhou <lumin@debian.org>
-Build-Depends: debhelper-compat (= 13)
+Build-Depends:debhelper,
 
 Package: luajit2
 Architecture: amd64 arm64 armel armhf i386 mips64el mipsel s390x
